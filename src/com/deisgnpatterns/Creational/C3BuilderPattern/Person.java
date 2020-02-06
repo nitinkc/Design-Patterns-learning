@@ -20,6 +20,7 @@ public class Person {
 		// finals for compulsory
 		private final String name;
 		private final String email;
+
 		private String address;
 		private int age;
 		private String nameOfMother;
