@@ -1,9 +1,9 @@
 package com.deisgnpatterns.aSOLIDPrinciples.SOLID.L;
 
-public class Car implements NormalVehicle {
+public class MotorCar implements NormalVehicle {
 
 	@Override
-	public void speed() {
+	public void accelerate() {
 		System.out.println("Speed up the car...");
 	}
 

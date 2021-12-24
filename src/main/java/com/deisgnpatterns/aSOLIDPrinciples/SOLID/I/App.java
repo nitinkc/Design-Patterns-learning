@@ -12,10 +12,9 @@ public class App {
 	 * 
 	 * 			List<String> l = new ArrayList<>();
 	 * 
-	 * 				Sometimes --> we want to implement that interface but just for the sake
-	 * 					of some methods defined in by that interface
-	 * 						BUT we have to implement all the methods
-	 * 								"fat interfaces"
+	 * 			Sometimes --> we want to implement that interface but just for the sake
+	 * 			of some methods defined in by that interface
+	 * 			BUT we have to implement all the methods "fat interfaces"
 	 * 
 	 * ----------------------------------------------------
 	 * 

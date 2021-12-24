@@ -1,4 +1,6 @@
-package com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory;
+package com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory.pizzaTypes;
+
+import com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory.Pizza;
 
 /**
  * Created by nichaurasia on Sunday, May/10/2020 at 9:53 PM

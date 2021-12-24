@@ -1,5 +1,8 @@
 package com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory;
 
+import com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory.pizzaTypes.CheesePizza;
+import com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory.pizzaTypes.MeatPizza;
+import com.deisgnpatterns.Creational.C2FactoryPattern.pizzaFactory.pizzaTypes.VeggiePizza;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -7,6 +10,8 @@ import org.apache.commons.lang3.StringUtils;
  */
 
 public class PizzaFactory {
+
+    //Factory Method for creating object.
     public static Pizza createPizza(String type) {
         Pizza pizza = null;
         if (null == type) {

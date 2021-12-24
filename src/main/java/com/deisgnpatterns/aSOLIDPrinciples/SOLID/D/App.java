@@ -58,6 +58,5 @@ public class App {
 		DatabaseHandler databaseHandler = new DatabaseHandler(new OracleDatabase());
 		databaseHandler.connect();
 		databaseHandler.disconnect();
-		
 	}
 }

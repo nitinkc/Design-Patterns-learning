@@ -1,7 +1,8 @@
 package com.deisgnpatterns.Structural.S1Decorator.shapes;
 
 public class ColoredShapeDecorator extends ShapeDecorator {
-    private Shape shape;
+
+    private Shape shape;//Has a relationship
 
     public ColoredShapeDecorator(Shape shape) {
         super(shape);

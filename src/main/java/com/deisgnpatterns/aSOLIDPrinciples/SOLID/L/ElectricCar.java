@@ -3,7 +3,7 @@ package com.deisgnpatterns.aSOLIDPrinciples.SOLID.L;
 public class ElectricCar implements ElectricVehicle {
 
 	@Override
-	public void speed() {
+	public void accelerate() {
 		System.out.println("Speed up with electric car...");
 	}
 

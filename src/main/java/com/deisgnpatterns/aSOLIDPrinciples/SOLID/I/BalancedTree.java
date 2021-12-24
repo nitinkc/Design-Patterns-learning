@@ -23,14 +23,12 @@ public class BalancedTree implements Tree, IBalancedTree {
 	@Override
 	public void rightRotation() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void leftRotation() {
 		// TODO Auto-generated method stub
-		
+
 	}
-
-
 }

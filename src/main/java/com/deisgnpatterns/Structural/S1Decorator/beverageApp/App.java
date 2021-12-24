@@ -41,7 +41,7 @@ public class App {
 		Beverage plainBeverage = new PlainBeverage();
 		System.out.println(plainBeverage.getDescription() + " COST: " + plainBeverage.getCost());
 
-		Beverage milk = new Milk(new PlainBeverage());
-		System.out.println(milk.getDescription() + " COST: " + milk.getCost());
+		Beverage beverageWithMilk = new Milk(new PlainBeverage());
+		System.out.println(beverageWithMilk.getDescription() + " COST: " + beverageWithMilk.getCost());
 	}
 }

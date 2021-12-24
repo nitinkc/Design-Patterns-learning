@@ -1,6 +1,5 @@
 package com.deisgnpatterns.aSOLIDPrinciples.SOLID.L;
 
-public interface NormalVehicle {
-	public void speed();
+public interface NormalVehicle extends Vehicle{
 	public void addFuel();
 }
