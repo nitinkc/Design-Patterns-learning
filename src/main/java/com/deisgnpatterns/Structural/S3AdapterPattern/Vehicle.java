@@ -5,5 +5,4 @@ package com.deisgnpatterns.Structural.S3AdapterPattern;
  */
 public interface Vehicle {
     public void accelerate();
-
 }
