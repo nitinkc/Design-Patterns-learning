@@ -17,7 +17,6 @@ public class  SingletonClass {
 			//Lazy Initialization, happens only when it is called
 			object = new SingletonClass();
 		}
-
 		return object;
 	}
 
@@ -25,5 +24,4 @@ public class  SingletonClass {
 	public String toString() {
 		return String.valueOf(object.hashCode());
 	}
-
 }

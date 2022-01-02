@@ -3,7 +3,7 @@ package com.deisgnpatterns.aSOLIDPrinciples;
 /**
  * Created by Nitin C on 3/5/2016.
  *
- * The Is-A relationship test is also know as INHERITANCE test
+ * The Is-A relationship test is also known as INHERITANCE test
  * IS-A : The property of an object being an instance of a data type
  * Hold true for a child that is a subclass of any parent, bea direct subclass or a distant child
  *

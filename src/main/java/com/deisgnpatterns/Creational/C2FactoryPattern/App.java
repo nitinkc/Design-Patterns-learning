@@ -35,6 +35,5 @@ public class App {
 		Algorithm algorithm = AlgorithmFactory.createAlgorithm(AlgorithmFactory.SHORTEST_PATH);
 		//Algorithm algorithm = AlgorithmFactory.createAlgorithm(AlgorithmFactory.SPANNING_TREE);
 		algorithm.solve();
-		
 	}
 }
