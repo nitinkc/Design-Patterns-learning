@@ -17,6 +17,11 @@ public class Saving implements IAccount{
     }
 
     @Override
+    public void balance() {
+
+    }
+
+    @Override
     public Integer getAccountNumber() {
         return null;
     }

@@ -5,6 +5,9 @@ import com.deisgnpatterns.Structural.S1Decorator.shapes.concreteComponent.Circle
 import com.deisgnpatterns.Structural.S1Decorator.shapes.concreteDecorator.ColoredShapeDecorator;
 import com.deisgnpatterns.Structural.S1Decorator.shapes.enums.Color;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Requirement is to add the functionality later and
  */

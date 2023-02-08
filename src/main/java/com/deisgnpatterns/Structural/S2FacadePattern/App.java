@@ -13,7 +13,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		SortingManager manager = new SortingManager();
+		SortingFacade manager = new SortingFacade();
 		
 		manager.bubbleSort();
 		manager.mergeSort();

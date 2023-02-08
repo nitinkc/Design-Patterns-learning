@@ -9,7 +9,7 @@ public abstract class BeverageDecorator implements Beverage {
 	}
 
 	@Override
-	public int getCost() {
+	public Double getCost() {
 		return this.beverage.getCost();
 	}
 	

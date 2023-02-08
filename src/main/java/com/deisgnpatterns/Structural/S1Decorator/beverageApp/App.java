@@ -1,5 +1,11 @@
 package com.deisgnpatterns.Structural.S1Decorator.beverageApp;
 
+import com.deisgnpatterns.Structural.S1Decorator.beverageApp.concreteComponents.DarkRoast;
+import com.deisgnpatterns.Structural.S1Decorator.beverageApp.concreteComponents.HouseBlend;
+import com.deisgnpatterns.Structural.S1Decorator.beverageApp.concreteDecorators.Milk;
+import com.deisgnpatterns.Structural.S1Decorator.beverageApp.concreteDecorators.SoyMilk;
+import com.deisgnpatterns.Structural.S1Decorator.beverageApp.concreteDecorators.Sugar;
+
 /**
  * 
  * Important design principle -> classes should open for extension but closed
@@ -31,17 +37,39 @@ public class App {
 
 	public static void main(String[] args) {
 
+		System.out.println("Plain beverage : $5.0");
+		System.out.println("Dark Roast : $5.5");
+		System.out.println("Espresso : $6.0");
+		System.out.println("Decaf : $4.5");
+
+		System.out.println("Milk : $1.50");
+		System.out.println("Soy Milk : $2.50");
+		System.out.println("Sugar : $0.50");
+		System.out.println("--------------------------");
+
+
 		//Milk with two Sugar
-		Beverage milkWith2Sugars = new Sugar(new Sugar(new Milk(new PlainBeverage())));
-		System.out.println(milkWith2Sugars.getDescription() + " COST: " + milkWith2Sugars.getCost());
+		Beverage milkWith2Sugars = new Sugar(new Sugar(new Milk(new HouseBlend())));
+		System.out.println(milkWith2Sugars.getDescription() + " ## Total Cost: " + milkWith2Sugars.getCost());
 
-		Beverage milkWithSugar = new Sugar(new Milk(new PlainBeverage()));
-		System.out.println(milkWithSugar.getDescription() + " COST: " + milkWithSugar.getCost());
+		Beverage milkWithSugar = new Sugar(new Milk(new HouseBlend()));
+		milkWithSugar = new Milk(new Sugar(new HouseBlend()));//Order doesn't matter
+		System.out.println(milkWithSugar.getDescription() + " ## Total Cost: "  + milkWithSugar.getCost());
 
-		Beverage plainBeverage = new PlainBeverage();
-		System.out.println(plainBeverage.getDescription() + " COST: " + plainBeverage.getCost());
+		Beverage plainBeverage = new HouseBlend();
+		System.out.println(plainBeverage.getDescription() + " ## Total Cost: "  + plainBeverage.getCost());
 
-		Beverage beverageWithMilk = new Milk(new PlainBeverage());
-		System.out.println(beverageWithMilk.getDescription() + " COST: " + beverageWithMilk.getCost());
+		Beverage beverageWithMilk = new Milk(new HouseBlend());
+		System.out.println(beverageWithMilk.getDescription() + " ## Total Cost: " + beverageWithMilk.getCost());
+
+		Beverage darkRoastWithSoyMilk2Sugar = new DarkRoast();
+		darkRoastWithSoyMilk2Sugar = new SoyMilk(darkRoastWithSoyMilk2Sugar);
+		darkRoastWithSoyMilk2Sugar = new Sugar(darkRoastWithSoyMilk2Sugar);
+		darkRoastWithSoyMilk2Sugar = new Sugar(darkRoastWithSoyMilk2Sugar);
+		System.out.println(darkRoastWithSoyMilk2Sugar.getDescription() + " ## Total Cost: " + darkRoastWithSoyMilk2Sugar.getCost());
+
+
+
+
 	}
 }

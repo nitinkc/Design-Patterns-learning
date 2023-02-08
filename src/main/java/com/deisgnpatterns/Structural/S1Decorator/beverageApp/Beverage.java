@@ -1,6 +1,6 @@
 package com.deisgnpatterns.Structural.S1Decorator.beverageApp;
 
 public interface Beverage {
-	public int getCost();
+	public Double getCost();
 	public String getDescription();
 }

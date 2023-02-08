@@ -9,13 +9,4 @@ public abstract class PizzaDecorator implements Pizza {
     public PizzaDecorator(Pizza pizza){
         this.pizza = pizza;
     }
-    @Override
-    public double price() {
-        return 0;
-    }
-
-    @Override
-    public String description() {
-        return null;
-    }
 }

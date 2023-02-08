@@ -1,8 +1,11 @@
 package com.deisgnpatterns.Structural.S2FacadePattern.coursera;
 
-public class Chequing implements IAccount{
-    public Chequing(Integer initialAmount) {
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
+public class Chequing implements IAccount{
+
+    public Chequing(Integer initialAmount) {
     }
 
     @Override
@@ -17,6 +20,11 @@ public class Chequing implements IAccount{
 
     @Override
     public void transfer(Integer amount) {
+
+    }
+
+    @Override
+    public void balance() {
 
     }
 

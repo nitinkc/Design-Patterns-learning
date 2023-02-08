@@ -14,7 +14,7 @@ public class BankServiceFacade {
         IAccount account = null;
 
         switch (type){
-            case "chequing":
+            case "checking":
                 account = new Chequing(initialAmount);
                 break;
             case "saving":
