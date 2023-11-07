@@ -18,9 +18,4 @@ public class FakeService {
 
         return List.of(Faker.instance().programmingLanguage().toString());
     }
-
-
-
-
-
 }

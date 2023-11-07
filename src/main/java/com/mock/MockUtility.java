@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
 public class MockUtility {
 
     static Faker instance = Faker.instance();
