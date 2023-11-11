@@ -7,15 +7,7 @@ import com.deisgnpatterns.D4Structural.S1Decorator.beverageApp.concreteDecorator
 import com.deisgnpatterns.D4Structural.S1Decorator.beverageApp.concreteDecorators.Sugar;
 
 /**
- * 
- * Important design principle -> classes should open for extension but closed
- * 			for modification !!!
- * 		
- * 				For example: ObserverPattern we can add new Observers + extend Subject	
- * 						 without adding code to Subject
- * 						 
- *  					+ DECORATOR PATTERN HELPS TO MAKE OPEN CLOSED
- *  						PRINCIPLE COME TRUE
+
  * 
  * 		- our goal is to allow classes to be easily extended with new behavior without
  * 				modifying existing code
@@ -23,6 +15,8 @@ import com.deisgnpatterns.D4Structural.S1Decorator.beverageApp.concreteDecorator
  * 							rewrite the whole application 
  * 
  * 		- applying the open-closed principle everywhere can lead to hard-to-understand code !!!
+ *
+ * 	DECORATOR PATTERN HELPS TO MAKE OPEN CLOSED PRINCIPLE COME TRUE
  * 
  * 			---------------------------------------------------------------------------------------			
  * 
