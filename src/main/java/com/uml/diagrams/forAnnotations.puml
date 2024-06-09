@@ -1,0 +1,11 @@
+@startuml
+interface Drivable {
+    // Interface
+}
+
+class Car {
+    // Dependent class implementing an interface
+}
+
+Car ..> Drivable : <<implements>>
+@enduml
