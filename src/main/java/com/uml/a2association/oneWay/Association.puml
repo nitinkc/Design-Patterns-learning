@@ -1,0 +1,21 @@
+@startuml
+class Employee {
+    - name: String
+    - id: int
+
+    + Employee(name: String, id: int)
+    + getName(): String
+    + getId(): int
+}
+
+class Department {
+    - employees: List<Employee>
+
+    + Department(employees: List<Employee>)
+    + addEmployee(employee: Employee): void
+    + removeEmployee(employee: Employee): void
+    + getEmployees(): List<Employee>
+}
+
+Employee "1" --> "0..*" Department
+@enduml

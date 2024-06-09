@@ -1,0 +1,17 @@
+@startuml
+class User {
+    - email: Email
+
+    + User(email: Email)
+    + sendEmail(content: String): void
+}
+
+class Email {
+    - recipient: User
+
+    + Email(recipient: User)
+    + send(content: String): void
+}
+
+User -- Email : both call each other
+@enduml

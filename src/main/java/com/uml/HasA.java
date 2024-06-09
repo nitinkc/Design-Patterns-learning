@@ -1,4 +1,4 @@
-package com.deisgnpatterns.D1SOLIDPrinciples;
+package com.uml;
 
 /**
  * Created by Nitin C on 3/5/2016.

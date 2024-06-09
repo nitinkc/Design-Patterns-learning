@@ -1,0 +1,11 @@
+@startuml
+class Department {
+    // Containing class
+}
+
+class Employee {
+    // Contained class
+}
+
+Department "1" *-- "many" Employee
+@enduml

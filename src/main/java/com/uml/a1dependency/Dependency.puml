@@ -1,0 +1,32 @@
+@startuml
+class Car1 {
+    // Dependent class
+}
+
+class Engine1 {
+    // Independent class
+}
+
+Car1 --> Engine1
+
+class Engine {
+    - horsepower: int
+    - fuelType: String
+
+    + Engine(int horsepower, String fuelType)
+    + start(): void
+    + stop(): void
+}
+
+class Car {
+    - engine: Engine
+
+    + Car(Engine engine)
+    + drive(): void
+    + stop(): void
+}
+
+Car --> Engine
+
+
+@enduml

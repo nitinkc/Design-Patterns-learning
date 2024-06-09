@@ -1,0 +1,51 @@
+@startuml
+class Vehicle {
+    String manufacturer
+    int year
+
+    + Vehicle(manufacturer: String, year: int)
+    + accelerate(): void
+    + brake(): void
+}
+
+class Car {
+    String model
+    int mileage
+
+    + Car(manufacturer: String, year: int, model: String, mileage: int)
+    + honk(): void
+    + brake(): void
+}
+
+class Boat {
+    String type
+    int length
+
+    + Boat(manufacturer: String, year: int, type: String, length: int)
+    + raiseAnchor(): void
+    + lowerAnchor(): void
+    + brake(): void
+}
+
+Vehicle <|-- Car
+Vehicle <|-- Boat
+
+interface Animal {
+    void eat();
+    void sleep();
+}
+
+interface Pet {
+    void play();
+    void cuddle();
+}
+
+class Cat {
+    implements Animal, Pet
+}
+
+Animal <|-- Cat
+Pet <|-- Cat
+
+@enduml
+

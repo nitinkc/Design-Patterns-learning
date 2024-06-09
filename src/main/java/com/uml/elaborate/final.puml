@@ -1,0 +1,65 @@
+=@startuml
+ class Vehicle {
+     - manufacturer: String
+     - model: String
+
+     + Vehicle(manufacturer: String, model: String)
+     + accelerate(speed: int): void
+     + brake(): void
+ }
+
+ interface Drivable {
+     + start(): void
+     + stop(): void
+ }
+
+ class Wheel {
+     - size: int
+     - type: String
+
+     + Wheel(size: int, type: String)
+     + rotate(): void
+ }
+
+ class Engine {
+     - horsepower: int
+     - fuelType: String
+
+     + Engine(horsepower: int, fuelType: String)
+     + start(): void
+     + stop(): void
+ }
+
+ class Car {
+     - wheels: List<Wheel> // Aggregation: Car "has-a" List of Wheel objects
+     - engine: Engine // Composition: Car "has-a" Engine object
+     - speed: int
+
+     + Car(manufacturer: String, model: String, wheels: List<Wheel>, engine: Engine)
+     + drive(): void
+ }
+
+ class Boat {
+     - length: int
+     - type: String
+     - engine: Engine // Composition: Boat "has-a" Engine object
+     - rudder: Rudder // Composition: Boat "has-a" Rudder object
+
+     + Boat(length: int, type: String, engine: Engine, rudder: Rudder)
+     + navigate(): void
+ }
+
+ class Rudder {
+     // Rudder class definition
+ }
+
+ Vehicle <|-- Car : Inheritance (IS-A)
+ Vehicle <|-- Boat : Inheritance (IS-A)
+ Car *-- Wheel : Aggregation
+ Drivable <|.. Car : Implementation
+ Drivable <|.. Boat : Implementation
+ Engine <-- Car : Uses (Dependency)
+ Engine <-- Boat : Uses (Dependency)
+ Boat *-- Rudder : Composition (has-a)
+
+ @enduml

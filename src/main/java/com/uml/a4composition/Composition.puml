@@ -1,0 +1,28 @@
+@startuml
+class Car {
+    // Containing class
+}
+
+class Engine {
+    // Contained class
+}
+
+Car *-- Engine
+
+class Room {
+    // Room class definition
+}
+
+class House {
+    - rooms: List<Room> // Composition relationship
+
+    + House()
+    + addRoom(room: Room): void
+    + removeRoom(room: Room): void
+    + getRooms(): List<Room>
+}
+
+'House "1" *-- "*" Room
+House *-- "1..*" Room
+
+@enduml
