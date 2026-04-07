@@ -17,5 +17,5 @@ class Department {
     + getEmployees(): List<Employee>
 }
 
-Employee "1" --> "0..*" Department
+Department "1" --> "0..*" Employee
 @enduml

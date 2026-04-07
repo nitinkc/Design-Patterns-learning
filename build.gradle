@@ -3,7 +3,6 @@ plugins {
 }
 group = 'Design_Patterns'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = "15.PREVIEW"
 
 repositories {
     mavenLocal()

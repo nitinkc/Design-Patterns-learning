@@ -1,1 +1,1 @@
-(https://nitinkc.github.io/java/SOLID-principles/)[https://nitinkc.github.io/java/SOLID-principles/]
+(SOLID-principles)[https://nitinkc.github.io/design%20patterns/SOLID-principles/]

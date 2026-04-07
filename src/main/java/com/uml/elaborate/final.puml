@@ -1,4 +1,4 @@
-=@startuml
+@startuml
  class Vehicle {
      - manufacturer: String
      - model: String
@@ -32,7 +32,7 @@
 
  class Car {
      - wheels: List<Wheel> // Aggregation: Car "has-a" List of Wheel objects
-     - engine: Engine // Composition: Car "has-a" Engine object
+     - engine: Engine // Aggregation: Car "has-a" Engine object
      - speed: int
 
      + Car(manufacturer: String, model: String, wheels: List<Wheel>, engine: Engine)
@@ -42,8 +42,8 @@
  class Boat {
      - length: int
      - type: String
-     - engine: Engine // Composition: Boat "has-a" Engine object
-     - rudder: Rudder // Composition: Boat "has-a" Rudder object
+     - engine: Engine // Aggregation: Boat "has-a" Engine object
+     - rudder: Rudder // Aggregation: Boat "has-a" Rudder object
 
      + Boat(length: int, type: String, engine: Engine, rudder: Rudder)
      + navigate(): void
@@ -55,11 +55,11 @@
 
  Vehicle <|-- Car : Inheritance (IS-A)
  Vehicle <|-- Boat : Inheritance (IS-A)
- Car *-- Wheel : Aggregation
+ Car o-- Wheel : Aggregation
  Drivable <|.. Car : Implementation
  Drivable <|.. Boat : Implementation
- Engine <-- Car : Uses (Dependency)
- Engine <-- Boat : Uses (Dependency)
- Boat *-- Rudder : Composition (has-a)
+ Car o-- Engine : Aggregation
+ Boat o-- Engine : Aggregation
+ Boat o-- Rudder : Aggregation
 
- @enduml
+@enduml

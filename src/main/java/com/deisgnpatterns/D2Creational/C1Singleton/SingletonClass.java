@@ -22,6 +22,6 @@ public class  SingletonClass {
 
 	@Override
 	public String toString() {
-		return String.valueOf(object.hashCode());
+		return String.valueOf("Singleton object created... hashcode: " + object.hashCode());
 	}
 }

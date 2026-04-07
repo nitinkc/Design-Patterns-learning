@@ -1,1 +1,1 @@
-(https://nitinkc.github.io/java/design%20patterns/optional-design-patterns/)[https://nitinkc.github.io/java/design%20patterns/optional-design-patterns/]
+(optional as design-patterns/)[https://nitinkc.github.io/java/Optionals/]

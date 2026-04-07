@@ -1,14 +1,4 @@
 @startuml
-class Car1 {
-    // Dependent class
-}
-
-class Engine1 {
-    // Independent class
-}
-
-Car1 --> Engine1
-
 class Engine {
     - horsepower: int
     - fuelType: String

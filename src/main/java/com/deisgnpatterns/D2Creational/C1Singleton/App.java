@@ -9,5 +9,8 @@ public class App {
 	public static void main(String[] args) {
 
 		System.out.println(SingletonClass.getInstanceOfSingleton());
+		System.out.println(SingletonClass.getInstanceOfSingleton());
+		System.out.println(SingletonClass.getInstanceOfSingleton());
+
 	}
 }

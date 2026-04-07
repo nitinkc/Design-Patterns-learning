@@ -1,7 +1,7 @@
 package com.deisgnpatterns.p1optional;
 
-import com.mock.FakeService;
 
+import com.mock.FakeService;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
